@@ -1,0 +1,165 @@
+.menu{
+    background: #0b5492;
+    padding: 1rem 0;
+    position: relative;
+
+    .icon-bars{
+        font-size: 3rem;
+        color: white;
+        display: none;
+        @media (max-width:992px) {
+            display: block;
+        }
+        cursor: pointer;
+    }
+    .list-menu{
+        width: max-content;
+        @media (max-width:992px) {
+            flex-direction: column;
+            position: absolute;
+            z-index: 999;
+            width: 100%;
+            background-color: #0b5492;
+            top:100%;
+            left: 0;
+            align-items: flex-start;
+            max-height: 0;
+            transition: 0.4s;
+            overflow: hidden;
+        }
+        .list-item{
+            position: relative;
+            transition: 0.4s;
+            &:hover{
+                .submenu{
+                    max-height: 50vh;
+                    top: 150%;
+                } 
+            }
+            .icon-plus{
+                display: none;
+            }
+
+            @media (max-width:992px) {
+                width: 100%;
+                border-top: 1px solid rgba(219, 219, 219, 0.774);
+                .icon-plus{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    position: absolute;
+                    z-index: 999;
+                    border-left: 1px solid rgba(219, 219, 219, 0.774);
+                    top:0;
+                    right: 0%;
+                    background: rgba(128, 128, 128, 0.363);
+                    padding: 0 2rem;
+                    height: 3.6rem;
+                    cursor: pointer;
+                }
+                &:hover{
+                    .submenu{
+                        max-height: 0vh;
+                        top: 100%;
+                    } 
+                }
+                
+            }
+        }
+            .list-link{
+                color: white;
+                padding: 0 1.5rem;
+                font-size: 1.5rem;
+                font-weight: bolder;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                img{
+                    width: 2rem;
+                    margin-right: 0.5rem;
+                }
+                @media (max-width:992px) {
+                    font-size: 1.2rem;
+                    padding: 0 1rem;
+                    margin: 1rem;
+                   
+                }
+                transition: 0.3s;
+                &:hover{
+                    color: yellow;
+                }
+            }
+            .trangchu{
+                color: yellow;
+            }
+            .submenu{
+                position: absolute;
+                z-index: 999;
+                top: 100%;
+                left: 0%;
+                width: max-content;
+                background: white;
+                padding: 0rem 1rem 0;
+                transition: all 0.4s;
+                max-height: 0px;
+                overflow: hidden;
+
+                ul{
+                    li{
+                        border-bottom: 1px  solid rgba(211, 210, 210, 0.781);
+                        
+                        a{
+                            color: black;
+                            transition: 0.3s;
+                            margin: 1rem;
+                            font-size: 1.5rem;
+                            font-weight: bolder;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            &:hover{
+                                color: #061e33;
+                            }
+                        }
+                    }
+                }
+                @media (max-width:992px) {
+                    position: unset;
+                    max-height: 0vh;
+                    width: 100%;
+                    background: #0b5492;
+                    
+                   ul{
+                        li{
+                            margin: 0 -1rem;
+                            border-top:0.3px  solid rgba(211, 210, 210, 0.781) ;
+                            a{
+                                font-size: 1.2rem;
+                                margin-left: 3rem;
+                                color: rgba(195, 195, 195, 0.87);
+                                font-weight: 500;
+                            }
+                        }
+                   }
+                }
+            }
+        }
+
+    .input{
+        position: relative;
+        input{
+            border: none;
+            background: inherit;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            margin: -0.5rem 0;
+            width: 100%;
+            color: yellow;
+            font-style: italic;
+            padding: 1rem;
+        }
+        img{
+            width: 2rem;
+            position: absolute;
+            top:0;
+            right: 0.5rem;
+            cursor: pointer;
+        }
+    }
+}

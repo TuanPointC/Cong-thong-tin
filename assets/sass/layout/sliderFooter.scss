@@ -1,0 +1,25 @@
+.sliderFooter{
+    margin-top: -2rem;
+    @media (max-width:992px) {
+        margin-top: 0rem;
+    }
+    .slider{
+        @extend .box-slider;
+        position: relative;
+        margin: 1rem 0;
+        height: 25rem;
+        padding: 1rem;
+        border: 1px solid rgba(199, 197, 197, 0.76);
+        button{
+            color: gray;
+            font-size: 5rem;
+            border: none;
+        }
+        .glide__arrow--left{
+            left: 0;
+        }
+        .glide__arrow--right{
+            right: 0;
+        }
+    }
+}

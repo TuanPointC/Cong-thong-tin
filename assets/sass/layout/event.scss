@@ -1,0 +1,228 @@
+.event{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .box-video{
+        .tulieu{
+           font-size: 3rem;
+           color: white;
+           font-weight: bold; 
+           width: 100%;
+           padding: 1rem 0;
+           background: $color-blue;
+           margin-bottom: 2rem;
+           text-align: center;
+        }
+        video{
+            display: block;
+            width: 100%;
+        }
+        .list-video{
+            .list-item{
+                border-bottom:1px solid rgba(211, 211, 211, 0.74);
+                background-image: url('/assets/img/icon-video.png');
+                background-position: 0px 50%;
+                background-repeat: no-repeat;
+                .list-link{
+                    @extend .link;
+                    padding-left:1.5rem ;
+                    font-size: 1.3rem;
+                    width: 100%;
+                    transition: 0.3s;
+                    margin-left: 1rem!important;
+                    &:hover{
+                        color: red!important;
+                    }
+                }
+                &:hover{
+                     background-image: url('/assets/img/icon-video-active.png');
+                }
+            }
+        }
+        .list-tag{
+            margin-top: 3rem;
+            .list-item{
+                margin: 1.5rem 0;
+                align-items: center;
+                position: relative;
+                border-top-left-radius: 5rem;
+                border-bottom-left-radius: 5rem;
+                background-image: linear-gradient(white,rgb(223, 222, 222),white);
+                border: 1px solid rgb(212, 212, 212);
+                .list-link{
+                    font-size: 1.3rem;
+                    color: $color-blue;
+                    margin-left: 7rem;
+                    padding: 1.9rem 0;
+                    width: 100%;
+                }
+                .img{
+                    position: absolute;
+                    top:50%;
+                    left: 0;
+                    transform: translate(0%,-50%);
+                    width: 6rem;
+                    height: 6rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $color-blue;
+                    border-radius: 50%;
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        .playlist{
+            height: 200px;
+            overflow-y: auto;
+            a{
+                font-size: 1.5rem;
+                color: black;
+                padding: 1rem 0;
+            }
+        }
+
+        .player{
+            background-color: $color_blue;
+            width: 100%;
+            height: 115px;
+            padding: 0.5rem 1rem 1rem;
+            font-size: 1.5rem;
+            color:white;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            .progressbar{
+                height: 1.5rem;
+                border-radius: 1rem;
+                background-color: white;
+                width: 100%;
+                margin: 1rem 0;
+                overflow: hidden;
+                cursor: pointer;
+                .run{
+                    height: 100%;
+                    width: 0%;
+                    background-color: gray;
+                }
+            }
+            .control{
+                margin-top: 3rem;
+                .prev{
+                    background-image: url(/assets/img/prev.png);
+                    width: 2rem;
+                    height: 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    margin-right: 1rem;
+                    cursor: pointer;
+                }
+                .play{
+                    @extend .prev;
+                    background-image: url(/assets/img/play.png);
+                }
+                .next{
+                    @extend .prev;
+                    background-image: url(/assets/img/next.png);
+                }
+                .stop{
+                    @extend .prev;
+                    background-image: url(/assets/img/top.png);
+                }
+                .mute{
+                    @extend .prev;
+                    background-image: url(/assets/img/mute.png);
+                    margin-left: 1rem;
+                }
+                .level{
+                    width: 10rem;
+                    height: 1rem;
+                    background-color: white;
+                    overflow: hidden;
+                    cursor: pointer;
+                    .current-level{
+                        height:100%;
+                        background-color: gray;
+                        width: 50%;
+                    }
+                }
+            }
+
+        }
+    }
+    .box-text{
+        
+        .img-text{
+            margin-top: 3rem;
+            img{
+                width: 33.33333%;
+                
+                float: left;
+                margin-right: 2rem;
+            }
+            .text{
+                .name{
+                    color: $color-blue;
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    margin-bottom: 2rem;
+                }
+                .time{
+                    font-size: 1.5rem;
+                    margin-bottom: 2rem;
+                }
+                .content{
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                }
+            }
+        }
+        .list-event{
+            @extend .list-style;
+            margin-left: 3rem;
+            li{
+                a{
+                    @extend .link;
+                }
+            }
+        }
+
+    }
+
+    .box-small{
+        margin-top: 2rem;
+        .list-policy{
+            @extend .list-style;
+            color: red;
+            margin-left: 2rem;
+            li{
+                
+                a{
+                    @extend .link;
+                    margin-bottom: 0!important;
+                }
+                
+                span{
+                    font-size:1.3rem;
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    .box-library{
+        margin-top: 2rem;
+        .block{
+            margin-top: 2rem;
+            .link-library{
+                font-size: 1.5rem;
+                margin-top: 1rem;
+                color: black;
+                i{
+                    color: red;
+                }
+            }
+        }
+    }
+}

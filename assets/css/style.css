@@ -1,0 +1,71 @@
+/*===========table of content========
+1,reset
+2,header
+3,banner
+
+*/
+
+/*==============1,reset=====*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+img{
+    width: 100%;
+    display: block;
+}
+ul{
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+.d-flex{
+    display: flex;
+}
+.text-align-center{
+    text-align: center;
+}
+.margin-auto{
+    margin: 0 auto;
+}
+.container-custom{
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+@media (min-width: 576px) {
+  .container-custom{
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-custom {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-custom {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-custom {
+    max-width: 1250px;
+  }
+}

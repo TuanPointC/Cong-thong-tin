@@ -1,0 +1,48 @@
+.footer{
+    background-image: url(/assets/img/bg_footer.png);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5rem 0 0;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    .box{
+        .info{
+            align-items: center;
+            img{
+                width: 2rem;
+            }
+            h2{
+                font-size: 1.5rem;
+                margin-left: 5px;
+            }
+            margin-bottom: 1rem;
+        }
+        .title-detail{
+            margin: 0.4rem 0;
+        }
+        margin-bottom: 2rem;
+    }
+    hr{
+        width: 100%;
+        margin: 2rem 0;
+        border-top: 1px solid red;
+    }
+    .banquyen{
+        padding: 1rem 0;
+        background-color: $color-blue;
+        margin-top:5rem;
+        color: white;
+    }
+}
+
+
+.scroll{
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    background-color: $color_blue;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
